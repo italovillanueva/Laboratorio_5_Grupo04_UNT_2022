@@ -3,6 +3,9 @@ print("Indique la cantidad de valores del conjunto A")
 N = int(input())
 
 if N > 0:
+
+    print("La cantidad de valores es correcta")
+    
     positivos=0
     negativos=0
     nulos=0
