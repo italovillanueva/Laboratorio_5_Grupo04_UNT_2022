@@ -3,25 +3,23 @@ print("Indique la cantidad de valores del conjunto A")
 N = int(input())
 
 if N > 0:
-
     print("La cantidad de valores es correcta")
     
     positivos=0
     negativos=0
     nulos=0
     suma_negativos=0
-    producto_positivos=1
+    producto_positivos=0
+    factor_producto=1
 
     for i in range(N):
         print("Ingrese el numero",i+1)
         numeros = int(input())
         
         if numeros > 0:
-
-            producto_positivos = producto_positivos * numeros
-            
+            producto_positivos = factor_producto * numeros
+        
         elif numeros < 0:           
-
             suma_negativos = suma_negativos + numeros
 
         else:
